@@ -1,0 +1,31 @@
+header {
+    justify-content: space-between;
+    padding: 1em;
+
+    .logo {
+        color: $primary-color;
+        font-size: 2em;
+        text-transform: uppercase;
+        font-weight: bold;
+        width: auto;
+        align-items: center;
+    }
+
+    .nav {
+        justify-content: space-around;
+        width: auto;
+        text-transform: uppercase;
+        align-items: center;
+
+        div {
+            padding: 0.5em 1em;
+            border-radius: 0.25em;
+
+            &:hover {
+                background-color: $primary-color;
+                color: #fff;
+                font-weight: bold;
+            }
+        }
+    }
+}

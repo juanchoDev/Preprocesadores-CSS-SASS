@@ -1,0 +1,9 @@
+La directiva @use y la directiva @import son ambas utilizadas en SASS para importar código de otros archivos SASS. Sin embargo, existen algunas diferencias clave entre ellas:
+
+1. Alcance de las variables, mixins y funciones: Con @import, las variables, mixins y funciones se exponen globalmente, lo que significa que están disponibles en todos los archivos importados. Por otro lado, con @use, estas se cargan con un espacio de nombres, lo que significa que solo están disponibles en el archivo que las carga1. Esto ayuda a evitar conflictos de nombres y hace que el código sea más claro y fácil de mantener2.
+
+2. Importación de archivos: Cuando se utiliza @import, un archivo se importa cada vez que se utiliza la directiva, lo que puede llevar a la duplicación de código si se importa el mismo archivo varias veces. En cambio, con @use, un archivo se importa solo una vez, sin importar cuántas veces se utilice la directiva en un proyecto1.
+
+3. Deprecación de @import: La directiva @import será deprecada en favor de @use y @forward, y se espera que el soporte se retire en el futuro1.
+
+Es importante mencionar que @use es generalmente recomendado sobre @import debido a estas diferencias2. Espero que esta información te sea útil.  
