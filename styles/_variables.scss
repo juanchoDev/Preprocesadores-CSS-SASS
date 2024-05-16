@@ -1,0 +1,33 @@
+/* Variables */
+$colores: (
+    'orange': #FF6815,
+    'redorange': #F43401,
+    'someblack': #282B33,
+    'gray': #535B64,
+);
+
+$font-sizes: (
+  'small': 0.8rem,
+  'medium': 1rem,
+  'large': 1.2rem,
+  'x-large': 1.5rem,
+  'xx-large': 2rem,
+);
+
+$color-orange: map-get($colores, 'orange');
+$color-redorange: map-get($colores, 'redorange');
+$color-someblack: map-get($colores, 'someblack');
+$color-gray: map-get($colores, 'gray');
+   
+
+@each $nombre, $color in $colores {
+    .bg-#{$nombre} {
+      background-color: $color;
+    }
+  }
+
+@each $size-name, $size-value in $font-sizes {
+    .fz-#{$size-name} {
+      font-size: $size-value;
+    }
+  }

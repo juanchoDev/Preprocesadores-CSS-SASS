@@ -1,0 +1,52 @@
+/* header */
+
+header {
+    width: 100vw;
+    justify-content: center;
+    padding: 1em;
+
+    .logo {
+        justify-content: start;
+        align-items: center;
+        color: $color-gray;
+        width: 30%;
+        font-weight: bold;
+    }
+
+    nav {
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+
+        li {
+            padding: 1em;
+            border-radius: 5%;
+            cursor: pointer;
+
+            &:hover {
+                transition: all .25s linear;
+                transform: scale(1.01);
+                background-color: $color-orange;
+                font-weight: bold;
+                color: #fff;
+            }
+        }
+
+    }
+
+    .social-icons {
+        width: 10%;
+        justify-content: space-around;
+        align-items: center;
+        ion-icon {
+            color: $color-someblack;
+            cursor: pointer;
+
+            &:hover {
+                color: $color-orange;
+            }
+        }
+    }
+
+}
+

@@ -1,0 +1,16 @@
+footer {
+    background-color:$color-someblack;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+  
+    a {
+      color: #fff;
+      text-decoration: none;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
