@@ -1,4 +1,31 @@
+/* Uso de Import */
 /* Variables */
+.pd-1 {
+  /* Uso de Operaciones */
+  padding: 0.5em;
+}
+
+.pd-2, .button, .front-img .front-img__text .input-email button {
+  /* Uso de Operaciones */
+  padding: 1em;
+}
+
+.pd-3 {
+  /* Uso de Operaciones */
+  padding: 1.5em;
+}
+
+.pd-4 {
+  /* Uso de Operaciones */
+  padding: 2em;
+}
+
+.pd-5 {
+  /* Uso de Operaciones */
+  padding: 2.5em;
+}
+
+/* Uso de @each */
 .bg-orange {
   background-color: #FF6815;
 }
@@ -33,6 +60,27 @@
 
 .fz-xx-large {
   font-size: 2rem;
+}
+
+/* Uso de @while y @if para generar clases de ancho pero solo de 0%, 25%, 50%, 75% y 100% */
+.width-0 {
+  width: 0%;
+}
+
+.width-25 {
+  width: 25%;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.width-75 {
+  width: 75%;
+}
+
+.width-100 {
+  width: 100%;
 }
 
 /* header */
@@ -123,6 +171,15 @@ body {
   flex-direction: column;
 }
 
+.button, .front-img .front-img__text .input-email button {
+  border: none;
+  /* uso de @extend */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  cursor: pointer;
+}
+
 /* IMAGEN PORTADA */
 .front-img {
   width: 80vw;
@@ -130,11 +187,11 @@ body {
   background-image: url("/img/obrero.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  /* uso de operaciones */
   background-size: 100% 100%;
 }
 .front-img .front-img__text {
   width: 30%;
-  padding: 5%;
   flex-direction: column;
   justify-content: center;
   align-items: start;
@@ -163,19 +220,14 @@ body {
   outline: none;
 }
 .front-img .front-img__text .input-email button {
-  border: none;
   background: #FF6815;
   background: linear-gradient(90deg, rgb(253, 99, 16) 0%, rgb(191, 45, 0) 100%);
-  padding: 3%;
   color: #fff;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.25em;
-  cursor: pointer;
 }
 
 /* RECUADROS */
 .services {
+  /* uso de operaciones */
   width: 70%;
   padding: 2.5%;
   grid-template-columns: repeat(4, 1fr);
@@ -190,6 +242,7 @@ body {
   color: #fff;
   cursor: pointer;
   transition: all 1s;
+  /* uso de operaciones */
 }
 .services .services-item:hover {
   position: relative;

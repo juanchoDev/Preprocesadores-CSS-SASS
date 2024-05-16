@@ -18,8 +18,15 @@ $color-orange: map-get($colores, 'orange');
 $color-redorange: map-get($colores, 'redorange');
 $color-someblack: map-get($colores, 'someblack');
 $color-gray: map-get($colores, 'gray');
-   
 
+@for $i from 1 through 5 {
+  .pd-#{$i} {
+    /* Uso de Operaciones */
+    padding: #{$i*(0.5/$i*$i)}em;
+  }
+}
+   
+/* Uso de @each */
 @each $nombre, $color in $colores {
     .bg-#{$nombre} {
       background-color: $color;
@@ -31,3 +38,17 @@ $color-gray: map-get($colores, 'gray');
       font-size: $size-value;
     }
   }
+
+  $i: 0;
+
+  /* Uso de @while y @if para generar clases de ancho pero solo de 0%, 25%, 50%, 75% y 100% */
+
+@while $i <= 100 {
+  @if $i == 0 or $i == 25 or $i == 50 or $i == 75 or $i == 100 {
+    .width-#{$i} {
+      width: unquote("#{$i}%");
+    }
+  }
+  $i: $i + 1;
+}
+  
